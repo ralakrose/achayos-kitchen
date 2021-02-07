@@ -1,0 +1,6 @@
+.mainmeals {
+  background-image: url("../Images/mainmeals.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}

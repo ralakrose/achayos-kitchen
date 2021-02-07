@@ -1,0 +1,6 @@
+.pastries {
+  background-image: url("../Images/pastries1.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}

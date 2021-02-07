@@ -1,0 +1,19 @@
+.Home {
+  text-align: left;
+  background-image: url("./Images/landing-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.title-background {
+  background: rgba(0, 0, 0, 0.8);
+  width: fit-content;
+  margin: auto;
+  padding: 3px;
+}
+
+.title {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 2em;
+}

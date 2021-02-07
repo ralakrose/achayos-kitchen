@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Navbar from "./Components/Navbar";
+import "./Styles.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Mainmeals from "./Pages/Mainmeals";
+import Info from "./Pages/Info";
+import Pastries from "./Pages/Pastries";
+
+class Home extends Component {
+  render() {
+    return (
+      <>
+        <Router>
+          <div className="Home">
+            <Navbar />
+            <header className="title-background">
+              <h2 className="title">Achie's Kitchen</h2>
+            </header>
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/mainmeals" component={Mainmeals} />
+              <Route path="/pastries" component={Pastries} />
+              <Route path="/info" component={Info} />
+            </Switch>
+          </div>
+        </Router>
+      </>
+    );
+  }
 }
-
-export default App;
+export default Home;
